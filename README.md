@@ -21,7 +21,9 @@ Open Twin Cities Blogs
   cd otc-blogs
   composer install
   ```
-5. Copy and edit config file
+5. Setup the Database
+  See [Wordpress's Using the MySQL Client Instructions](http://codex.wordpress.org/Installing_WordPress#Using_the_MySQL_Client)
+6. Copy and edit config file
   ```
   cp local-config.php.sample local-config.php
   nano local-config.php

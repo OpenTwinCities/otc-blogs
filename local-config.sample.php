@@ -1,6 +1,6 @@
 <?php
-define( 'DB_NAME', 'wordpress' );
-define( 'DB_USER', 'exampleuser' );
+define( 'DB_NAME', 'otc_blogs' );
+define( 'DB_USER', 'otc_blogs' );
 define( 'DB_PASSWORD', 'examplepassword' );
 define( 'DB_HOST', 'localhost' );
 

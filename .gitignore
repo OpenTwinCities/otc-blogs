@@ -1,4 +1,4 @@
-public/wordpress/
+public/wp/
 vendor/
 local-config.php
 production-config.php

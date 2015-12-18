@@ -11,7 +11,7 @@
     "johnpbloch/wordpress": "4.4.*"
    },
    "extra": {
-    "wordpress-install-dir": "public/wordpress",
+    "wordpress-install-dir": "public/wp",
     "installer-paths": {
       "public/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],

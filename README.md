@@ -20,8 +20,9 @@ Open Twin Cities Blogs
   the `<Directory>` block at the bottom points to this repo.
 
   Now, enable the otc-blogs site: `sudo a2ensite otc-blogs`
+  Enable the rewrite mod: `sudo a2enmod rewrite`
 
-  Restart apache: `sudo service apache2 reload`
+  Restart apache: `sudo service apache2 restart`
 
   You will also need to change the group owner and permissions of this repo's
   `public` folder to be Apache's group:
@@ -40,7 +41,13 @@ Open Twin Cities Blogs
   cp local-config.php.sample local-config.php
   nano local-config.php
   ```
+
+  If you're hosting on something besides localhost, be sure to set `DOMAIN_CURRENT_SITE`
+  to your actual domain name.
 7. Go through the WordPress install. If you are hosting locally, visit `http://lvh.me`.
 8. Set the site's address to not include the wp/ subdirectory. Go to the admin screen,
    then Settings and edit Site Address to not have any directoires after the domain name.
 9. Setup MultiSite. Go to Tools -> Network Setup. Choose sub-domains, then click `Install`.
+   WordPress will output somethings to put into wp-config.php and .htaccess. No
+   need to edit htaccess (those settings are include), put will need to put the
+   output for wp-config.php into your local-config.php (or production-config.php).

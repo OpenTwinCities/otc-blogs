@@ -34,10 +34,13 @@ Open Twin Cities Blogs
   cd otc-blogs
   composer install
   ```
-5. Setup the Database
-  See [Wordpress's Using the MySQL Client Instructions](http://codex.wordpress.org/Installing_WordPress#Using_the_MySQL_Client)
+5. Setup the Database. See [Wordpress's Using the MySQL Client Instructions](http://codex.wordpress.org/Installing_WordPress#Using_the_MySQL_Client)
 6. Copy and edit config file
   ```
   cp local-config.php.sample local-config.php
   nano local-config.php
   ```
+7. Go through the WordPress install. If you are hosting locally, visit `http://lvh.me`.
+8. Set the site's address to not include the wp/ subdirectory. Go to the admin screen,
+   then Settings and edit Site Address to not have any directoires after the domain name.
+9. Setup MultiSite. Go to Tools -> Network Setup. Choose sub-domains, then click `Install`.

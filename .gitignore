@@ -1,0 +1,4 @@
+public/wordpress/
+vendor/
+local-config.php
+production-config.php

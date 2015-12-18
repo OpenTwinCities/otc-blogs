@@ -21,3 +21,8 @@ Open Twin Cities Blogs
   cd otc-blogs
   composer install
   ```
+5. Copy and edit config file
+  ```
+  cp local-config.php.sample local-config.php
+  nano local-config.php
+  ```

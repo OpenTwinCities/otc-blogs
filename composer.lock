@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "34ab3697d6557c71e5db8a349b3a68d6",
-    "content-hash": "186385a1220ba73ebad4147b154a6ecf",
+    "hash": "1b0d18fda30557d4abd014e83cc4f751",
+    "content-hash": "da0930cbd9c625d8e4746ddbee40d8c2",
     "packages": [
         {
             "name": "OpenTwinCities/otc-blogs-capitol-code-theme",
@@ -346,6 +346,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wonderm00ns-simple-facebook-open-graph-tags/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-github-sync",
+            "version": "1.5.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-github-sync/",
+                "reference": "tags/1.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-github-sync.1.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-github-sync/"
         },
         {
             "name": "wpackagist-plugin/wp-markdown",

@@ -33,6 +33,7 @@ setup_plugins(){
   wp --path=public/wp plugin activate table-of-contents-plus --network
   wp --path=public/wp plugin activate wonderm00ns-simple-facebook-open-graph-tags --network
   wp --path=public/wp plugin activate ninja-forms --network
+  wp --path=public/wp plugin activate wp-github-sync --network
   wp --path=public/wp plugin activate wp-open-graph --network
   wp --path=public/wp plugin activate wp-markdown --network
 }

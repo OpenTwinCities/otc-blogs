@@ -21,6 +21,7 @@
     "wpackagist-plugin/ninja-forms": "2.*",
     "wpackagist-plugin/table-of-contents-plus": "1509",
     "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "1.*",
+    "wpackagist-plugin/wp-github-sync": "1.*",
     "wpackagist-plugin/wp-open-graph": "1.*",
     "wpackagist-plugin/wp-markdown": "1.*",
     "wpackagist-theme/twentyfifteen": "1.*",

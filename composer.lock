@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec4281e12d4e5aae8efbaf7c7af36920",
-    "content-hash": "5a3656f84d8ee359065871f4d7be6d75",
+    "hash": "7669af8a391ef310fa4798efba6e4c1c",
+    "content-hash": "3089a45bae197ddae8d87513c02969f3",
     "packages": [
         {
             "name": "OpenTwinCities/otc-blogs-capitol-code-theme",
@@ -386,6 +386,26 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentyfifteen/"
+        },
+        {
+            "name": "wpackagist-theme/ward",
+            "version": "1.0.6",
+            "source": {
+                "type": "svn",
+                "url": "http://themes.svn.wordpress.org/ward/",
+                "reference": "1.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/ward.1.0.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/ward/"
         }
     ],
     "packages-dev": [],

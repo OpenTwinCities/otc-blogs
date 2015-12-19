@@ -21,7 +21,8 @@
     "wpackagist-plugin/table-of-contents-plus": "1509",
     "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "1.*",
     "wpackagist-plugin/wp-markdown": "1.*",
-    "wpackagist-theme/twentyfifteen": "1.*"
+    "wpackagist-theme/twentyfifteen": "1.*",
+    "wpackagist-theme/ward": "1.*"
    },
    "extra": {
     "wordpress-install-dir": "public/wp",

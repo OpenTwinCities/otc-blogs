@@ -60,13 +60,16 @@ setup_wordpress(){
 setup_sites(){
   wp --path=public/wp site create --slug=capitol-code --title='Capitol Code'
   wp --path=public/wp site create --slug=citycampmn --title='CityCamp Minnesota'
+  wp --path=public/wp site create --slug=openminnesota --title='Open Minnesota'
 }
 
 setup_themes(){
-  wp --path=public/wp theme enable twentyfifteen --network
   wp --path=public/wp theme enable capitol-code --network
-  wp --path=public/wp theme activate twentyfifteen --url=citycampmn.$1
+  wp --path=public/wp theme enable twentyfifteen --network
+  wp --path=public/wp theme enable ward --network
   wp --path=public/wp theme activate capitol-code --url=capitol-code.$1
+  wp --path=public/wp theme activate twentyfifteen --url=citycampmn.$1
+  wp --path=public/wp theme activate ward --url=openminnesota.$1
 }
 
 case "$1" in

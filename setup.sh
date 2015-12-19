@@ -19,6 +19,16 @@ get_dependencies()
   fi
 }
 
+setup_plugins(){
+  wp --path=public/wp plugin activate akismet --url=capitol-code.$1
+  wp --path=public/wp plugin activate googleanalytics --url=capitol-code.$1
+  wp --path=public/wp plugin activate google-sitemap-generator --url=capitol-code.$1
+  wp --path=public/wp plugin activate mailchimp-for-wp --url=capitol-code.$1
+  wp --path=public/wp plugin activate table-of-contents-plus --url=capitol-code.$1
+  wp --path=public/wp plugin activate wonderm00ns-simple-facebook-open-graph-tags --url=capitol-code.$1
+  wp --path=public/wp plugin activate wp-markdown --url=capitol-code.$1
+}
+
 setup_wordpress(){
   if [ -e "local-config.php" ];
   then
@@ -43,22 +53,28 @@ setup_wordpress(){
   fi
 
   setup_sites
-  setup_themes
+  setup_plugins $1
+  setup_themes $1
 }
 
 setup_sites(){
   wp --path=public/wp site create --slug=capitol-code --title='Capitol Code'
+  wp --path=public/wp site create --slug=citycampmn --title='CityCamp Minnesota'
 }
 
 setup_themes(){
   wp --path=public/wp theme enable twentyfifteen --network
   wp --path=public/wp theme enable capitol-code --network
+  wp --path=public/wp theme activate twentyfifteen --url=citycampmn.$1
   wp --path=public/wp theme activate capitol-code --url=capitol-code.$1
 }
 
 case "$1" in
   'dependencies') 
     get_dependencies
+    ;;
+  'plugins')
+    setup_plugins $2
     ;;
   'sites')
     setup_sites

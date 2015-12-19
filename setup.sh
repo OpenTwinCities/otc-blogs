@@ -20,8 +20,29 @@ get_dependencies()
 }
 
 setup_wordpress(){
+  if [ -e "local-config.php" ];
+  then
+    config_file='local-config.php'
+  elif [ -e 'production-config.php' ];
+  then
+    config_file='production-config.php'
+  else
+    echo 'ERROR: You must create a local-config.php or a production-config.php'
+    exit
+  fi
+  echo "Using $config_file"
   cd public
   wp core multisite-install --url=$1 --subdomains --title='Open Twin Cities' --admin_user=admin --admin_email=$2 --admin_password=$3
+  cd ..
+  git diff public/wp-config.php | patch -p1 -f $config_file --
+  git checkout public/wp-config.php
+
+  if [ -e "$config_file.rej" ];
+  then
+    echo "---Something went wrong. See $config_file.orig and $config_file.rej "
+  else
+    rm $config_file.*
+  fi
 }
 
 case "$1" in

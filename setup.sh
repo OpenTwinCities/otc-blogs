@@ -31,9 +31,7 @@ setup_wordpress(){
     exit
   fi
   echo "Using $config_file"
-  cd public
-  wp core multisite-install --url=$1 --subdomains --title='Open Twin Cities' --admin_user=admin --admin_email=$2 --admin_password=$3
-  cd ..
+  wp --path=public/wp core multisite-install --url=$1 --subdomains --title='Open Twin Cities' --admin_user=admin --admin_email=$2 --admin_password=$3
   git diff public/wp-config.php | patch -p1 -f $config_file --
   git checkout public/wp-config.php
 
@@ -43,11 +41,29 @@ setup_wordpress(){
   else
     rm $config_file.*
   fi
+
+  setup_sites
+  setup_themes
+}
+
+setup_sites(){
+  wp --path=public/wp site create --slug=capitol-code --title='Capitol Code'
+}
+
+setup_themes(){
+  wp --path=public/wp theme enable capitol-code --network
+  wp --path=public/wp theme activate capitol-code --url=capitol-code.$1
 }
 
 case "$1" in
   'dependencies') 
     get_dependencies
+    ;;
+  'sites')
+    setup_sites
+    ;;
+  'themes')
+    setup_themes $2
     ;;
   'wordpress') 
     setup_wordpress $2 $3 $4 

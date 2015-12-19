@@ -19,6 +19,12 @@ get_dependencies()
   fi
 }
 
+empty_sites(){
+  wp --path=public/wp site empty --yes --url=capitol-code.$1
+  wp --path=public/wp site empty --yes --url=citycampmn.$1
+  wp --path=public/wp site empty --yes --url=openminnesota.$1
+}
+
 setup_plugins(){
   wp --path=public/wp plugin activate akismet --network
   wp --path=public/wp plugin activate googleanalytics --network
@@ -55,6 +61,7 @@ setup_wordpress(){
   fi
 
   setup_sites
+  empty_sites $1
   setup_plugins $1
   setup_themes $1
 }
@@ -77,6 +84,9 @@ setup_themes(){
 case "$1" in
   'dependencies') 
     get_dependencies
+    ;;
+  'empty') 
+    empty_sites $2
     ;;
   'plugins')
     setup_plugins $2

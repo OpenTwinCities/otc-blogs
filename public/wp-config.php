@@ -42,11 +42,6 @@ define( 'WP_DEBUG', false);
 // =========================
 define( 'AUTOMATIC_UPDATER_DISABLED', false );
 
-// ================
-// Enable MultiSite
-// ================
-define( 'WP_ALLOW_MULTISITE', true );
-
 // =======================
 // Load WordPress Settings
 // =======================
@@ -56,4 +51,4 @@ if ( ! defined( 'ABSPATH' ) ) {
   define( 'ABSPATH', dirname( __FILE__ ) . '/wp/' );
 }
 require_once( ABSPATH . 'wp-settings.php' );
-?>
+

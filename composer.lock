@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae331934379e39a4dbee66be2761a163",
-    "content-hash": "3acb1280ab51109ad0232ac9cb79c81b",
+    "hash": "4098abdd4bd909f5510dfa0f8564d0c7",
+    "content-hash": "0dfacce2496ca02b6933d49d08c6d059",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,6 +189,26 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "wpackagist-theme/epic",
+            "version": "1.2.7",
+            "source": {
+                "type": "svn",
+                "url": "http://themes.svn.wordpress.org/epic/",
+                "reference": "1.2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/epic.1.2.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/epic/"
         }
     ],
     "packages-dev": [],

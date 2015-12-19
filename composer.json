@@ -3,13 +3,18 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/OpenTwinCities/otc-blogs-capitol-code-theme"
     }
   ],
   "require": {
     "php": ">=5.4",
     "composer/installers": "1.*",
     "johnpbloch/wordpress": "4.4.*",
-    "wpackagist-theme/epic": "1.2.*"
+    "OpenTwinCities/otc-blogs-capitol-code-theme": "*",
+    "wpackagist-theme/twentyfifteen": "1.4.*"
    },
    "extra": {
     "wordpress-install-dir": "public/wp",

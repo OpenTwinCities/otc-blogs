@@ -51,6 +51,7 @@ setup_sites(){
 }
 
 setup_themes(){
+  wp --path=public/wp theme enable twentyfifteen --network
   wp --path=public/wp theme enable capitol-code --network
   wp --path=public/wp theme activate capitol-code --url=capitol-code.$1
 }

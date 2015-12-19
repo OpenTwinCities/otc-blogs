@@ -4,9 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4098abdd4bd909f5510dfa0f8564d0c7",
-    "content-hash": "0dfacce2496ca02b6933d49d08c6d059",
+    "hash": "4f232a513876e93b6cd1eb43689be97d",
+    "content-hash": "70df67b6f601e1fa6fbb2c01b94ca45b",
     "packages": [
+        {
+            "name": "OpenTwinCities/otc-blogs-capitol-code-theme",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpenTwinCities/otc-blogs-capitol-code-theme.git",
+                "reference": "98ef6ddb969631de7928c91d20316f331747dba7"
+            },
+            "require": {
+                "wpackagist-theme/epic": "1.2.*"
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "time": "2015-12-19 18:39:27"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.22",
@@ -209,6 +226,26 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/epic/"
+        },
+        {
+            "name": "wpackagist-theme/twentyfifteen",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "http://themes.svn.wordpress.org/twentyfifteen/",
+                "reference": "1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentyfifteen.1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentyfifteen/"
         }
     ],
     "packages-dev": [],

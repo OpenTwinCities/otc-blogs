@@ -60,7 +60,7 @@ setup_wordpress(){
     rm $config_file.*
   fi
 
-  setup_sites
+  setup_sites $1
   empty_sites $1
   setup_plugins $1
   setup_themes $1
@@ -68,8 +68,11 @@ setup_wordpress(){
 
 setup_sites(){
   wp --path=public/wp site create --slug=capitol-code --title='Capitol Code'
+  wp --path=public/wp option update blogdescription "" --url=capitol-code.$1
   wp --path=public/wp site create --slug=citycampmn --title='CityCamp Minnesota'
+  wp --path=public/wp option update blogdescription "" --url=citycampmn.$1
   wp --path=public/wp site create --slug=openminnesota --title='Open Minnesota'
+  wp --path=public/wp option update blogdescription "" --url=openminnesota.$1
 }
 
 setup_themes(){
@@ -92,7 +95,7 @@ case "$1" in
     setup_plugins $2
     ;;
   'sites')
-    setup_sites
+    setup_sites $2
     ;;
   'themes')
     setup_themes $2

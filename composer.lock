@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7669af8a391ef310fa4798efba6e4c1c",
-    "content-hash": "3089a45bae197ddae8d87513c02969f3",
+    "hash": "34ab3697d6557c71e5db8a349b3a68d6",
+    "content-hash": "186385a1220ba73ebad4147b154a6ecf",
     "packages": [
         {
             "name": "OpenTwinCities/otc-blogs-capitol-code-theme",
@@ -288,6 +288,26 @@
             "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/"
         },
         {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "2.9.31",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/2.9.31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.31.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
             "name": "wpackagist-plugin/table-of-contents-plus",
             "version": 1509,
             "source": {
@@ -346,6 +366,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-markdown/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-open-graph",
+            "version": "1.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-open-graph/",
+                "reference": "tags/1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-open-graph.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-open-graph/"
         },
         {
             "name": "wpackagist-theme/epic",

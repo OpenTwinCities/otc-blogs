@@ -20,13 +20,15 @@ get_dependencies()
 }
 
 setup_plugins(){
-  wp --path=public/wp plugin activate akismet --url=capitol-code.$1
-  wp --path=public/wp plugin activate googleanalytics --url=capitol-code.$1
-  wp --path=public/wp plugin activate google-sitemap-generator --url=capitol-code.$1
-  wp --path=public/wp plugin activate mailchimp-for-wp --url=capitol-code.$1
-  wp --path=public/wp plugin activate table-of-contents-plus --url=capitol-code.$1
-  wp --path=public/wp plugin activate wonderm00ns-simple-facebook-open-graph-tags --url=capitol-code.$1
-  wp --path=public/wp plugin activate wp-markdown --url=capitol-code.$1
+  wp --path=public/wp plugin activate akismet --network
+  wp --path=public/wp plugin activate googleanalytics --network
+  wp --path=public/wp plugin activate google-sitemap-generator --network
+  wp --path=public/wp plugin activate mailchimp-for-wp --network
+  wp --path=public/wp plugin activate table-of-contents-plus --network
+  wp --path=public/wp plugin activate wonderm00ns-simple-facebook-open-graph-tags --network
+  wp --path=public/wp plugin activate ninja-forms --network
+  wp --path=public/wp plugin activate wp-open-graph --network
+  wp --path=public/wp plugin activate wp-markdown --network
 }
 
 setup_wordpress(){

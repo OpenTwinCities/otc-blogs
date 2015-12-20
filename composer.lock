@@ -4,25 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b0d18fda30557d4abd014e83cc4f751",
-    "content-hash": "da0930cbd9c625d8e4746ddbee40d8c2",
+    "hash": "322740745f8dcc8943082d695b3c55fb",
+    "content-hash": "2053c4399668847042c0c2442bcf2b40",
     "packages": [
         {
             "name": "OpenTwinCities/otc-blogs-capitol-code-theme",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenTwinCities/otc-blogs-capitol-code-theme.git",
-                "reference": "98ef6ddb969631de7928c91d20316f331747dba7"
+                "reference": "4313bc158dec18438c4465c26996a6ed2698b56e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpenTwinCities/otc-blogs-capitol-code-theme/zipball/4313bc158dec18438c4465c26996a6ed2698b56e",
+                "reference": "4313bc158dec18438c4465c26996a6ed2698b56e",
+                "shasum": ""
             },
             "require": {
                 "wpackagist-theme/epic": "1.2.*"
             },
-            "type": "library",
+            "type": "wordpress-theme",
+            "extra": {
+                "installer-name": "capitol-code"
+            },
             "license": [
                 "MIT"
             ],
-            "time": "2015-12-19 18:39:27"
+            "description": "Wordpress theme for the 2014 Capitol Code website",
+            "homepage": "http://capitolcode.mn.gov",
+            "support": {
+                "source": "https://github.com/OpenTwinCities/otc-blogs-capitol-code-theme/tree/master",
+                "issues": "https://github.com/OpenTwinCities/otc-blogs-capitol-code-theme/issues"
+            },
+            "time": "2015-12-20 20:47:34"
         },
         {
             "name": "composer/installers",

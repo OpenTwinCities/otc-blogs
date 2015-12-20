@@ -5,7 +5,7 @@ Open Twin Cities Blogs
 
 1. Get this repo
 
-  `git clone <url>`
+  `git clone https://github.com/OpenTwinCities/otc-blogs.git`
 
 2. Install Dependencies
 
@@ -18,11 +18,13 @@ Open Twin Cities Blogs
   the `DocumentRoot` is set to the `public` folder of this repo, and make sure
   the `<Directory>` block at the bottom points to this repo.
 
-  Now, enable the otc-blogs site: `sudo a2ensite otc-blogs`
-  Enable the rewrite mod: `sudo a2enmod rewrite`
+  Now, enable the otc-blogs site, and the rewrite mod, and restart Apache: 
 
-  Restart apache: `sudo service apache2 restart`
-
+  ```
+  sudo a2ensite otc-blogs
+  sudo a2enmod rewrite
+  sudo service apache2 restart
+  ```
   You will also need to change the group owner and permissions of this repo's
   `public` folder to be Apache's group:
   ```

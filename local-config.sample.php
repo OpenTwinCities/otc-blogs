@@ -4,15 +4,6 @@ define( 'DB_USER', 'otc_blogs' );
 define( 'DB_PASSWORD', 'examplepassword' );
 define( 'DB_HOST', 'localhost' );
 
-/*
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
-define('DOMAIN_CURRENT_SITE', 'lvh.me');
-define('PATH_CURRENT_SITE', '/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
- */
-
 ini_set( 'display_errors', E_ALL );
 define( 'WP_DEBUG_DISPLAY', true );
 define( 'WP_DEBUG', true );

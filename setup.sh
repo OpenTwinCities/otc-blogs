@@ -85,6 +85,12 @@ setup_themes(){
   wp --path=public/wp theme activate ward --url=openminnesota.$1
 }
 
+if [ -n "${2+1}" ];
+then
+  old_http_host=$HTTP_HOST
+  export HTTP_HOST=$2
+fi 
+
 case "$1" in
   'dependencies') 
     get_dependencies
@@ -105,3 +111,8 @@ case "$1" in
     setup_wordpress $2 $3 $4 
     ;;
 esac
+
+if [ -n "${2+1}" ];
+then
+  export HTTP_HOST=$old_http_host
+fi

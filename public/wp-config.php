@@ -34,8 +34,8 @@ define( 'WPLANG', '' );
 // ======================
 // Hide errors by default
 // ======================
-define( 'WP_DEBUG_DISPLAY', false );
-define( 'WP_DEBUG', false);
+if ( !defined('WP_DEBUG_DISPLAY') ) define( 'WP_DEBUG_DISPLAY', false );
+if ( !defined('WP_DEBUG') ) define( 'WP_DEBUG', false);
 
 // =========================
 // Disable automatic updates
